@@ -1,5 +1,5 @@
-# Machine-Learning-Practical-Application-1
-Github repository for the Practical Application 1 
+# Machine-Learning-Practical-Application
+Github repository for the Practical Application 
 
 # Project Overview
 The goal of this project is to distinguish between customers who accepted a driving coupon versus those that did not by using visualizations and probability distributions
