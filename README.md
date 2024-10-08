@@ -47,8 +47,3 @@ The dataset has missing values in several columns. Here's a breakdown:
 - The 'CarryAway' column has 151 missing values, which represents 1.19% of the total data.
 - The 'RestaurantLessThan20' column has 130 missing values, which represents 1.02% of the total data.
 - The 'Restaurant20To50' column has 189 missing values, which represents 1.49% of the total data.
-
-Based on this information, we might consider:
-- **Imputation:** Replacing the missing values with estimates (mean, median, etc.) if the missing data is not significant or does not change the analysis significantly.
-- **Deletion:** If a column has a high percentage of missing values, it might be better to drop the column from the analysis.
-- **Further Investigation:** If the percentage of missing data is high, we might consider investigating why there is missing data and if there is any underlying pattern or bias in those missing values.
