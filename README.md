@@ -520,3 +520,51 @@ Key Findings:
 
 In simpler terms:
 The chart shows that people are more likely to accept 'Carry out & Take away' coupons when they are heading home or to a place where they don't have a specific destination. They might be less likely to accept them when they are traveling to work.
+
+**Acceptance rates for each Occupation for the Carry out & Take away coupons and compare it with overall acceptance rate**
+```python
+# 4. Acceptance Rate by Income Level
+occupation_acceptance_rates = carryaway_coupons_data.groupby('occupation')['Y'].mean() * 100
+print(occupation_acceptance_rates.to_markdown(numalign="left", stralign="left"))
+
+plt.figure(figsize=(12, 6))
+sns.barplot(x=occupation_acceptance_rates.index, y=occupation_acceptance_rates.values, palette='viridis', hue = occupation_acceptance_rates.index)
+plt.axhline(y=overall_acceptance_rate, color='red', linestyle='-', label='Overall Acceptance Rate')
+plt.title('Carry Away Coupon Acceptance Rate by Occupation')
+plt.xlabel('Income Level')
+plt.ylabel('Acceptance Rate (%)')
+plt.xticks(rotation=45, ha='right')
+plt.show()
+```
+| occupation                                | Y       |
+|:------------------------------------------|:--------|
+| Architecture & Engineering                | 63.3333 |
+| Arts Design Entertainment Sports & Media  | 69.3069 |
+| Building & Grounds Cleaning & Maintenance | 100     |
+| Business & Financial                      | 80.8081 |
+| Community & Social Services               | 72.7273 |
+| Computer & Mathematical                   | 71.2598 |
+| Construction & Extraction                 | 96.4286 |
+| Education&Training&Library                | 70.122  |
+| Farming Fishing & Forestry                | 80      |
+| Food Preparation & Serving Related        | 82.7586 |
+| Healthcare Practitioners & Technical      | 92.5    |
+| Healthcare Support                        | 83.3333 |
+| Installation Maintenance & Repair         | 62.5    |
+| Legal                                     | 53.6585 |
+| Life Physical Social Science              | 50      |
+| Management                                | 79.4118 |
+| Office & Administrative Support           | 76.2712 |
+| Personal Care & Service                   | 81.25   |
+| Production Occupations                    | 85.7143 |
+| Protective Service                        | 96.7742 |
+| Retired                                   | 70.2381 |
+| Sales & Related                           | 71.7172 |
+| Student                                   | 67.4576 |
+| Transportation & Material Moving          | 81.5789 |
+| Unemployed                                | 75.2161 |
+
+
+![download (9)](https://github.com/user-attachments/assets/04394426-9d65-433b-b246-5c24a8ae51cf)
+
+
