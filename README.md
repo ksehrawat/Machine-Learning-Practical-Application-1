@@ -417,3 +417,36 @@ Compare the acceptance rates between those drivers who:
 - go to bars more than once a month, had passengers that were not a kid, and were not widowed OR
 - go to bars more than once a month and are under the age of 30 OR
 - go to cheap restaurants more than 4 times a month and income is less than 50K.
+
+```python
+# Group 1: Go to bars more than once a month, no kids as passengers, and not widowed
+bar_coupons.loc[(bar_coupons['Bar'] > 0.5) & (bar_coupons['passanger'] != 'Kid(s)') & (bar_coupons['maritalStatus'] != 'Widowed'), 'target_group'] = 'Group 1'
+
+# Group 2: Go to bars more than once a month and are under 30
+bar_coupons.loc[(bar_coupons['Bar'] > 0.5) & (bar_coupons['age'] < '30'), 'target_group'] = 'Group 2'
+
+# Group 3: Go to cheap restaurants more than 4 times a month and income is less than 50K
+# Use the | operator for element-wise OR and isin() for efficient multiple value checks
+bar_coupons.loc[(bar_coupons['RestaurantLessThan20'] > 6.0) & (bar_coupons['income'].isin(['Less than $12500', '$12500 - $24999', '$25000 - $37499', '$37500 - $49999'])), 'target_group'] = 'Group 3'
+
+# Calculate acceptance rates for each group
+acceptance_rates_target = bar_coupons.groupby('target_group')['Y'].mean().reset_index()
+print(acceptance_rates_target.to_markdown(index=False))
+
+# Visualize the comparison
+plt.figure(figsize=(8, 6))
+sns.barplot(x='target_group', y='Y', data=bar_coupons, palette='viridis', hue='target_group')
+plt.title('Coupon Acceptance Rate by Target Group')
+plt.xlabel('Target Group')
+plt.ylabel('Acceptance Rate')
+plt.ylim(0, 1)
+plt.show()
+```
+| target_group   |        Y |
+|:---------------|---------:|
+| Group 1        | 0.671362 |
+| Group 2        | 0.717687 |
+| Group 3        | 0.59375  |
+| Other          | 0.287786 |
+
+![download (7)](https://github.com/user-attachments/assets/f437c207-30af-472f-b3f6-215d287ca4df)
