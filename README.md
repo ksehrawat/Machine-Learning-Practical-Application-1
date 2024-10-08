@@ -162,3 +162,10 @@ plt.show()
 - The correlation between Y and other features are weak, suggesting no strong linear relationship.
 
 # DataSet Analysis
+
+**Calculate the Overall Acceptance rate of the Coupons**
+```python
+overall_acceptance_rate = data['Y'].mean() * 100
+print(f"Overall Acceptance Rate: {overall_acceptance_rate:.2f}%")
+```
+- The overall acceptance rate for all the Coupons is 56.93%
