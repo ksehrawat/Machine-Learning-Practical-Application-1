@@ -183,7 +183,12 @@ print(coupon_acceptance_rates.to_markdown(numalign="left", stralign="left"))
 | Coffee House          | 49.6331 |
 | Restaurant(20-50)     | 44.6013 |
 | Bar                   | 41.1918 |
-
+**Calcu;late the difference between Acceptance rate by different Coupon Types and the overall Coupon Acceptance Rate**
+```python
+for coupon, acceptance_rate in coupon_acceptance_rates.items():
+  difference = acceptance_rate - overall_acceptance_rate
+  print(f"Coupon: {coupon}, Acceptance Rate: {acceptance_rate:.2f}, Difference from Overall Acceptance Rate: {difference:.2f}")
+```
 - Coupon: Carry out & Take away, Acceptance Rate: 73.77, Difference from Overall Acceptance Rate: 16.84
 - Coupon: Restaurant(<20), Acceptance Rate: 70.90, Difference from Overall Acceptance Rate: 13.97
 - Coupon: Coffee House, Acceptance Rate: 49.63, Difference from Overall Acceptance Rate: -7.30
