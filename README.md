@@ -26,5 +26,8 @@ data = pd.read_csv('data/coupons.csv')
 # Python Code to print the column names and their data types
 print(data.info())
 
+# Print the data frame first 5 rows in a structured format
+
+print(data.head().to_markdown(index=False, numalign="left", stralign="left"))
 
 ```
