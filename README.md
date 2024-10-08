@@ -271,3 +271,13 @@ plt.show()
 
 
 # Bar  Coupon Data Analysis
+
+**Create a new DataFrame that contains just the Bar coupons**
+```python
+# Filter the dataframe to only include rows where the `coupon` column is equal to 'Bar'
+bar_coupons_data = data[data['coupon'] == 'Bar'].copy()
+
+# Print the first 5 rows of `bar_coupons_data`
+print(bar_coupons_data.head().to_markdown(index=False, numalign="left", stralign="left"))
+```
+
