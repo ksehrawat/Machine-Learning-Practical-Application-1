@@ -5,9 +5,9 @@ Github repository for the Practical Application 1
 
 * Folder: data - This folder is created to store the data file (coupons.csv)
 
-* Feature 1
-* Feature 2
-* Feature 3
+* Data Set - Data set used in the project is in the coupons.csv file 
+  
+* Code File - Python Code is stored in the Module_5_Activity1.ipynb file
 
 # Data Analysis
 
