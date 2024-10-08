@@ -189,3 +189,9 @@ print(coupon_acceptance_rates.to_markdown(numalign="left", stralign="left"))
 - Coupon: Coffee House, Acceptance Rate: 49.63, Difference from Overall Acceptance Rate: -7.30
 - Coupon: Restaurant(20-50), Acceptance Rate: 44.60, Difference from Overall Acceptance Rate: -12.33
 - Coupon: Bar, Acceptance Rate: 41.19, Difference from Overall Acceptance Rate: -15.74
+
+**Summary**
+
+- The overall average coupon acceptance rate is 57%.
+- 'Carry out & Take away' coupons have the highest acceptance rate at 74%, which is 17% higher than the overall average.
+- 'Bar' coupons have the lowest acceptance rate at 41%, which is 16% lower than the overall average.
