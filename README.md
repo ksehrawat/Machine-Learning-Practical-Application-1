@@ -156,4 +156,5 @@ sns.heatmap(numerical_data.corr(), annot=True, cmap='coolwarm', fmt=".2f")
 plt.title('Correlation Heatmap of Numerical Features')
 plt.show()
 ```
+![Heatmap](https://github.com/user-attachments/assets/31953a78-cda4-46fa-b05b-9e05b2fca9ed)
 
