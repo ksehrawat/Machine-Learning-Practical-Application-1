@@ -90,3 +90,5 @@ else:
 ```python
 data.dropna(subset=['CoffeeHouse', 'Restaurant20To50', 'CarryAway', 'RestaurantLessThan20', 'Bar'], inplace=True)
 ```
+**Data Cleanup to The columns Bar, CoffeeHouse, CarryAway, RestaurantLessThan20, and Restaurant20To50 Columns by converting them in numeric type in order to carry out the necessary computations later in the Analysis**
+
