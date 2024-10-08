@@ -78,3 +78,11 @@ The dataset has missing values in several columns. Here's a breakdown:
 # Dataset Cleanup
 
 The column car has a very high proportion of missing values (around 99%), rendering it practically unusable for our analysis. So, I will exclude this column from further analysis
+```python
+# Drop the 'car' column
+if 'car' in data.columns:
+    data.drop('car', axis=1, inplace=True)
+    print("Column 'car' deleted successfully.")
+else:
+    print("Column 'car' not found. Skipping drop.")
+```
