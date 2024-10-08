@@ -145,7 +145,7 @@ From the descriptive statstics we can see:
 - The standard deviation for these columns indicates the level of variability in the frequency of visits to these places.
 - For instance, the large difference between mean and median in Restaurant20To50 may suggest skewed distribution with potential outliers.
 
-** Correlation Calculation between all the numerical columns of the Dataset using Heatmap**
+**Correlation Calculation between all the numerical columns of the Dataset using Heatmap**
 ```python
 plt.figure(figsize=(12, 8))
 
