@@ -200,3 +200,26 @@ for coupon, acceptance_rate in coupon_acceptance_rates.items():
 - The overall average coupon acceptance rate is 57%.
 - 'Carry out & Take away' coupons have the highest acceptance rate at 74%, which is 17% higher than the overall average.
 - 'Bar' coupons have the lowest acceptance rate at 41%, which is 16% lower than the overall average.
+
+**What proportion of the total observations chose to accept the coupon?**
+```python
+# Calculate the proportion of observations who accepted the coupon
+acceptance_rate = data['Y'].mean()
+
+# Print the acceptance rate
+print(f"The proportion of observations who accepted the coupon is: {acceptance_rate * 100:.2f}%")
+
+# Create a pie chart to visualize the acceptance rate
+plt.figure(figsize=(6, 6))
+labels = ['Accepted', 'Not Accepted']
+sizes = [acceptance_rate, 1 - acceptance_rate]
+colors = ['skyblue', 'lightcoral']
+explode = (0.1, 0)  # Explode the 'Accepted' slice for emphasis
+
+plt.pie(sizes, explode=explode, labels=labels, colors=colors,
+        autopct='%1.1f%%', shadow=True, startangle=90)
+
+plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+plt.title('Coupon Acceptance Rate')
+plt.show()
+```
