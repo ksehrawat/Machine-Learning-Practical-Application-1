@@ -225,3 +225,6 @@ plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 plt.title('Coupon Acceptance Rate')
 plt.show()
 ```
+![download](https://github.com/user-attachments/assets/5d5dc272-695f-4ea6-9794-4e34607b822f)
+
+**The proportion of observations who accepted the coupon is: 56.93%**
