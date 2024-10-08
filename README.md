@@ -144,6 +144,16 @@ From the descriptive statstics we can see:
 - For the columns Bar, CoffeeHouse, CarryAway, RestaurantLessThan20, and Restaurant20To50, the mean, median, and other percentile values suggest how often customers generally visit these places.
 - The standard deviation for these columns indicates the level of variability in the frequency of visits to these places.
 - For instance, the large difference between mean and median in Restaurant20To50 may suggest skewed distribution with potential outliers.
-![Heatmap](https://github.com/user-attachments/assets/9d6aa6b5-3558-4f3c-8987-0783dba16a09)
 
+** Correlation Calculation between all the numerical columns of the Dataset using Heatmap**
+```python
+plt.figure(figsize=(12, 8))
+
+# Select only numerical columns for correlation calculation
+numerical_data = data.select_dtypes(include=['number'])
+
+sns.heatmap(numerical_data.corr(), annot=True, cmap='coolwarm', fmt=".2f")
+plt.title('Correlation Heatmap of Numerical Features')
+plt.show()
+```
 
