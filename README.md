@@ -1,6 +1,9 @@
 # Machine-Learning-Practical-Application-1
 Github repository for the Practical Application 1 
 
+# Project Overview
+The goal of this project is to distinguish between customers who accepted a driving coupon versus those that did not by using visualizations and probability distributions
+
 # Files Information
 
 * Data Folder: **data** - This folder is created to store the data file (coupons.csv)
