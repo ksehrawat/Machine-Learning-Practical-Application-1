@@ -249,3 +249,22 @@ for bar in bars:
 plt.show()
 ```
 ![download (2)](https://github.com/user-attachments/assets/8a896371-d0b1-402f-8e2c-064cc3e75f4b)
+
+**Histogram to visualize the temperature column**
+```python
+plt.figure(figsize=(10, 6))
+sns.histplot(data['temperature'], bins=10, color='skyblue', edgecolor='black', kde = 'true')
+plt.title('Distribution of Temperature')
+plt.xlabel('Temperature')
+plt.ylabel('Frequency')
+
+# Annotate the bars with their values
+for p in plt.gca().patches:
+    plt.gca().annotate(f'{p.get_height():.0f}', (p.get_x() + p.get_width() / 2., p.get_height()),
+                     ha='center', va='center', fontsize=10, color='black', xytext=(0, 5),
+                     textcoords='offset points')
+
+plt.show()
+
+```
+![download (3)](https://github.com/user-attachments/assets/44c5ad8f-94f2-4f4b-8847-59d7711587c7)
