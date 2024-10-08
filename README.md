@@ -1,7 +1,7 @@
 # Machine-Learning-Practical-Application-1
 Github repository for the Practical Application 1 
 
-#Data Analysis
+# Data Analysis
 
 Column Names & Data Types
 
