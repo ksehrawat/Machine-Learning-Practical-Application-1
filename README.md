@@ -27,3 +27,17 @@ data = pd.read_csv('data/coupons.csv')
 print(data.info())
 
 
+# Print descriptive statistics for all numeric columns
+
+print("\nDescriptive Statistics for Numeric Columns:\n")
+print(data.describe().to_markdown(numalign="left", stralign="left"))
+
+# For all object type columns, print the number of distinct values and the most frequent value
+
+print("\nObject Column Summaries:\n")
+for col in data.select_dtypes(include='object'):
+    print(f"Column: {col}")
+    print(f"  Number of distinct values: {data[col].nunique()}")
+    print(f"  Most frequent value: {data[col].mode()[0]}\n")
+
+
