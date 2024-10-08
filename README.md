@@ -12,11 +12,10 @@ Github repository for the Practical Application 1
 # Data Analysis
 
 ```python
-# Python Code to  read the coupons,csv stored in the data Folder
+# Python Code to  read the coupons.csv stored in the data Folder
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 import numpy as np
 
 data = pd.read_csv('data/coupons.csv')
-data.head()
