@@ -318,3 +318,26 @@ plt.show()
 - Total Bar Coupons: 1913
 - Total Accepted Bar Coupons: 788
 - Proportion of Accepted Bar Coupons: 41.19%
+
+**Acceptance rate between those who went to a bar 3 or fewer times a month to those who went more**
+```python
+# Create a new column `bar_visit_frequency` based on the `Bar` column
+bar_coupons = data[data['coupon'] == 'Bar'].copy()
+bar_coupons['bar_visit_frequency'] = bar_coupons['Bar'].apply(lambda x: '3 or fewer' if x in [0, 0.5, 2] else 'more than 3')
+
+# Calculate acceptance rates for each group
+acceptance_rates = bar_coupons.groupby('bar_visit_frequency')['Y'].mean().reset_index()
+print (acceptance_rates.to_markdown(index=False))
+
+plt.figure(figsize=(8, 6))
+sns.barplot(x='bar_visit_frequency', y='Y', data=acceptance_rates, palette='viridis', hue = 'bar_visit_frequency' )
+plt.title('Coupon Acceptance Rate by Bar Visit Frequency')
+plt.xlabel('Bar Visit Frequency')
+plt.ylabel('Acceptance Rate')
+plt.ylim(0, 1)  # Set y-axis limits to 0 and 1 for better visualization
+plt.show()
+```
+| bar_visit_frequency   |        Y |
+|:----------------------|---------:|
+| 3 or fewer            | 0.372674 |
+| more than 3           | 0.761658 |
