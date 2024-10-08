@@ -91,4 +91,26 @@ else:
 data.dropna(subset=['CoffeeHouse', 'Restaurant20To50', 'CarryAway', 'RestaurantLessThan20', 'Bar'], inplace=True)
 ```
 **Data Cleanup to The columns Bar, CoffeeHouse, CarryAway, RestaurantLessThan20, and Restaurant20To50 Columns by converting them in numeric type in order to carry out the necessary computations later in the Analysis**
+```python
+# Transformation the data to Numeric Values
+def transform_frequency(freq_str):
+  if freq_str == 'never':
+    return 0.0
+  elif freq_str == 'less1':
+    return 0.5
+  elif freq_str == '1~3':
+    return 2.0
+  elif freq_str == '4~8':
+    return 6.0
+  elif freq_str == 'gt8':
+    return 10.0
+  elif pd.isna(freq_str): # Check for np.nan using pd.isna()
+    return np.nan
+  else:
+    raise ValueError(f"Unexpected frequency value: {freq_str}")
 
+# Apply the transformation to the relevant columns
+columns_to_transform = ['Bar', 'CoffeeHouse', 'CarryAway', 'RestaurantLessThan20', 'Restaurant20To50']
+for col in columns_to_transform:
+  data[col] = data[col].astype(str).apply(transform_frequency)
+```
