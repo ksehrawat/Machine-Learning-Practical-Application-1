@@ -375,3 +375,32 @@ Possible Reasons:
 - Habitual bar visitors might be more receptive to bar-related deals and promotions.
 - Older drivers in this group might be more inclined to take advantage of opportunities to try out new bars or revisit preferred ones.
 - It's possible that age and bar-visiting frequency are correlated with lifestyle factors that influence coupon acceptance.
+
+**Compare the acceptance rate between drivers who go to bars more than once a month and had passengers that were not a kid and had occupations other than farming, fishing, or forestry.**
+```python
+# Create a new column 'target_group' based on the criteria
+bar_coupons['target_group'] = 'Other'
+bar_coupons.loc[(bar_coupons['Bar'].apply(lambda x: x not in [0, 0.5])) &
+                (bar_coupons['passanger'] != 'Kid(s)') &
+                (~bar_coupons['occupation'].isin(['Farming Fishing & Forestry'])),
+                'target_group'] = 'Bar > 1, No Kids, Not Farming/Fishing/Forestry'
+
+# Calculate acceptance rates for each group
+acceptance_rates_target = bar_coupons.groupby('target_group')['Y'].mean().reset_index()
+print(acceptance_rates_target.to_markdown(index=False))
+
+# Visualize the comparison
+plt.figure(figsize=(8, 6))
+sns.barplot(x='target_group', y='Y', data=bar_coupons, palette='viridis', hue='target_group') # Changed hue parameter
+plt.title('Coupon Acceptance Rate by Target Group')
+plt.xlabel('Target Group')
+plt.ylabel('Acceptance Rate')
+plt.ylim(0, 1)
+plt.show()
+```
+| target_group                                   |        Y |
+|:-----------------------------------------------|---------:|
+| Bar > 1, No Kids, Not Farming/Fishing/Forestry | 0.709434 |
+| Other                                          | 0.297903 |
+
+![download (6)](https://github.com/user-attachments/assets/ddf5934c-e86c-4602-8692-38764ed29139)
