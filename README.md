@@ -163,7 +163,7 @@ plt.show()
 
 # DataSet Analysis
 
-**Calculate the Overall Acceptance rate of the Coupons**
+**Overall Acceptance rate of the Coupons**
 ```python
 overall_acceptance_rate = data['Y'].mean() * 100
 print(f"Overall Acceptance Rate: {overall_acceptance_rate:.2f}%")
