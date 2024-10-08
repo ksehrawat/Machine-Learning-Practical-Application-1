@@ -176,7 +176,7 @@ coupon_acceptance_rates = data.groupby('coupon')['Y'].mean() * 100
 coupon_acceptance_rates = coupon_acceptance_rates.sort_values(ascending=False)
 print(coupon_acceptance_rates.to_markdown(numalign="left", stralign="left"))
 ```
-| coupon                | Y       |
+| Coupon Type           | Acceptance Rate|
 |:----------------------|:--------|
 | Carry out & Take away | 73.7719 |
 | Restaurant(<20)       | 70.9009 |
