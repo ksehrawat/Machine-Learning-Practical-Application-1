@@ -484,3 +484,11 @@ Based on the analysis, we can hypothesize that drivers who accepted bar coupons 
 We think that drivers who accepted bar coupons are probably people who like to go to bars, are younger, don't have kids, and are not widowed. They might also be less likely to have a lower income or mainly visit cheap restaurants.
 
 # Independent Investigation Carry out & Take away coupons
+
+**Create a new DataFrame that contains just the Carry out & Take away coupons**
+```python
+# Filter data on Carry out & Take away coupons
+carryaway_coupons_data = data[data['coupon'] == 'Carry out & Take away'].copy()
+
+print(carryaway_coupons_data.head().to_markdown(index=False, numalign="left", stralign="left"))
+```
