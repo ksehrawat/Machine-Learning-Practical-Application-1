@@ -12,7 +12,7 @@ The goal of this project is to distinguish between customers who accepted a driv
   
 * Code File - Python Code is stored in the **Module_5_Activity1.ipynb** file
 
-# Analysis
+# Initial Data Analysis
 
 ```python
 # Python Code to  read the coupons.csv stored in the data Folder using various Pyhon Libraries
@@ -31,6 +31,8 @@ print(data.info())
 print(data.head().to_markdown(index=False, numalign="left", stralign="left"))
 
 ```
+# Dataset Analysis for missing or problematic data
+
 ```python
 # Print the count and percentage of missing values for each column
 missing_values = data.isnull().sum()
