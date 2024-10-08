@@ -3,7 +3,7 @@ Github repository for the Practical Application 1
 
 # Files Information
 
-* Folder: data - This folder is created to store the data file (coupons.csv)
+* Data Folder: data - This folder is created to store the data file (coupons.csv)
 
 * Data Set - Data set used in the project is in the coupons.csv file 
   
