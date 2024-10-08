@@ -458,7 +458,7 @@ The plot suggests that drivers who frequently visit bars, especially those witho
 
 ## Hypothesis about Drivers who Accepted Bar Coupons:
 
-Based on our analysis, we can hypothesize that drivers who accepted bar coupons are likely to share some common characteristics:
+Based on the analysis, we can hypothesize that drivers who accepted bar coupons are likely to share some common characteristics:
 
 **1. Frequent Bar Visitors:**
 - They probably go to bars more than once a month.
