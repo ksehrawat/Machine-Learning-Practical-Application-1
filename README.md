@@ -281,3 +281,35 @@ bar_coupons_data = data[data['coupon'] == 'Bar'].copy()
 print(bar_coupons_data.head().to_markdown(index=False, numalign="left", stralign="left"))
 ```
 
+**Proportion of bar coupons were accepted?**
+```python
+# Count the number of accepted Bar coupons (Y = 1) using data frame bar_coupons_data
+accepted_bar_coupons_count = (bar_coupons_data['Y'] == 1).sum()
+
+# Print the Total Bar Coupons
+print(f"Total Bar Coupons: {len(bar_coupons_data)}")
+
+# Print the Total Accepted Bar Coupons
+print(f"Total Accepted Bar Coupons: {accepted_bar_coupons_count}")
+
+# Calculate the proportion of accepted coupons
+Bar_coupon_proportion_accepted = accepted_bar_coupons_count / len(bar_coupons_data)
+
+# Print the proportion as a percentage, rounded to two decimal places
+print(f"Proportion of Accepted Bar Coupons: {Bar_coupon_proportion_accepted * 100:.2f}%")
+
+
+# Create a pie chart with different colors to visualize the proportion of accepted Bar coupons
+plt.figure(figsize=(8, 8))
+labels = ['Accepted', 'Not Accepted']
+sizes = [Bar_coupon_proportion_accepted, 1 - Bar_coupon_proportion_accepted]
+colors = ['lightgreen', 'lightcoral']
+explode = (0.1, 0)  # Explode the 'Accepted' slice for emphasis
+
+plt.pie(sizes, explode=explode, labels=labels, colors=colors,
+        autopct='%1.1f%%', shadow=True, startangle=90)
+
+plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+plt.title('Bar Coupon Acceptance Rate')
+plt.show()
+```
