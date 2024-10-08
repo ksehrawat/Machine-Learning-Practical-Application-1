@@ -169,3 +169,10 @@ overall_acceptance_rate = data['Y'].mean() * 100
 print(f"Overall Acceptance Rate: {overall_acceptance_rate:.2f}%")
 ```
 - The overall acceptance rate for all the Coupons is 56.93%
+
+**Acceptance rate by different Coupon Types**
+```python
+coupon_acceptance_rates = data.groupby('coupon')['Y'].mean() * 100
+coupon_acceptance_rates = coupon_acceptance_rates.sort_values(ascending=False)
+print(coupon_acceptance_rates.to_markdown(numalign="left", stralign="left"))
+```
