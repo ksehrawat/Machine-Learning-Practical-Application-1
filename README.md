@@ -183,6 +183,8 @@ print(coupon_acceptance_rates.to_markdown(numalign="left", stralign="left"))
 | Coffee House          | 49.6331 |
 | Restaurant(20-50)     | 44.6013 |
 | Bar                   | 41.1918 |
+
+
 **Calcu;late the difference between Acceptance rate by different Coupon Types and the overall Coupon Acceptance Rate**
 ```python
 for coupon, acceptance_rate in coupon_acceptance_rates.items():
