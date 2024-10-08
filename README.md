@@ -228,3 +228,23 @@ plt.show()
 ![download](https://github.com/user-attachments/assets/5d5dc272-695f-4ea6-9794-4e34607b822f)
 
 **The proportion of observations who accepted the coupon is: 56.93%**
+
+# Data Visualization
+
+**Bar plot to visualize the coupon column**
+```python
+coupon_counts = data['coupon'].value_counts()
+
+plt.figure(figsize=(10, 6))
+bars = plt.bar(coupon_counts.index, coupon_counts.values)
+plt.xlabel('Coupon Type')
+plt.ylabel('Frequency')
+plt.title('Frequency of Different Coupon Types')
+
+# Add frequency labels to the bars
+for bar in bars:
+  yval = bar.get_height()
+  plt.text(bar.get_x() + bar.get_width()/2, yval, int(yval), ha='center', va='bottom')
+
+plt.show()
+```
