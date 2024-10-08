@@ -129,3 +129,18 @@ for col in data.select_dtypes(include='object'):
     print(f"  Number of distinct values: {data[col].nunique()}")
     print(f"  Most frequent value: {data[col].mode()[0]}\n")
 ```
+Analysis of Descriptive Statistics:
+
+**Count:** The number of observations (rows) for each column. It shows how much data we have for each feature.
+**Mean:** The average value for each column. It gives an overall idea of the central tendency of the data for each feature.
+**Standard Deviation (std):** How much the data varies around the mean. A higher standard deviation means more variability.
+**Minimum (min):** The smallest value in each column.
+**25th Percentile (25%):** The value below which 25% of the data falls. This gives us a sense of the lower range of the data.
+**50th Percentile (50% or median):** The value below which 50% of the data falls. It is the middle value when the data is sorted.
+**75th Percentile (75%):** The value below which 75% of the data falls. It gives us a sense of the upper range of the data.
+**Maximum (max):** The largest value in each column.
+
+From the descriptive statstics we can see:
+- For the columns Bar, CoffeeHouse, CarryAway, RestaurantLessThan20, and Restaurant20To50, the mean, median, and other percentile values suggest how often customers generally visit these places.
+- The standard deviation for these columns indicates the level of variability in the frequency of visits to these places.
+- For instance, the large difference between mean and median in Restaurant20To50 may suggest skewed distribution with potential outliers.
