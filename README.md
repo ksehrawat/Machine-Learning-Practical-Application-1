@@ -567,4 +567,12 @@ plt.show()
 
 ![download (9)](https://github.com/user-attachments/assets/04394426-9d65-433b-b246-5c24a8ae51cf)
 
+**Correlation Matrix for Carry Away Coupons**
+```python
+numerical_carryaway_data = carryaway_coupons_data.select_dtypes(include=['number'])
+plt.figure(figsize=(12, 8))
+sns.heatmap(numerical_carryaway_data.corr(), annot=True, cmap='coolwarm', fmt=".2f")
+plt.title('Correlation Matrix for Carry Away Coupons')
+plt.show()
+```
 
