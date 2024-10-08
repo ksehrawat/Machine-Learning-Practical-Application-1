@@ -114,3 +114,4 @@ columns_to_transform = ['Bar', 'CoffeeHouse', 'CarryAway', 'RestaurantLessThan20
 for col in columns_to_transform:
   data[col] = data[col].astype(str).apply(transform_frequency)
 ```
+# Statstical Analysis of the Cleanup Dataset
