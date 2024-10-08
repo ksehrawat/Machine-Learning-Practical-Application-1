@@ -158,3 +158,9 @@ plt.show()
 ```
 ![Heatmap](https://github.com/user-attachments/assets/31953a78-cda4-46fa-b05b-9e05b2fca9ed)
 
+**Key observations from the heatmap:**
+- There is a moderate positive correlation between RestaurantLessThan20 and CarryAway (0.36). This suggests that customers who frequently eat at inexpensive restaurants also tend to order takeout more often.
+- There's a weak positive correlation between Restaurant20To50 and RestaurantLessThan20 (0.13).
+- There's a very weak positive correlation between Bar and CoffeeHouse.
+- The correlation between Y and other features are weak, suggesting no strong linear relationship.
+
