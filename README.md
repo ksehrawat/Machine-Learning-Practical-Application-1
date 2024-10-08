@@ -364,6 +364,14 @@ plt.show()
 |:-------------------|---------:|
 | Bar > 1 & Age > 25 | 0.682809 |
 | Other              | 0.337333 |
+
 ![download (5)](https://github.com/user-attachments/assets/0c4b9859-6926-49e1-bce1-67b0f12f7815)
 
-Summary: The bar plot visually shows that there is a slight difference in the coupon acceptance rate between the two groups. People who go to a bar more than once a month and are over 25 have a slightly higher acceptance rate for bar coupons compared to others. However, the difference is not very large, suggesting that the combination of frequent bar visits and age over 25 might not be a strong predictor of bar coupon acceptance.
+Key Observation:
+The drivers in the 'Bar > 1 & Age > 25' group seem to have a slightly higher coupon acceptance rate compared to the 'Other' group.
+This suggests that drivers who are both older and frequent bar visitors might be more likely to accept bar-related coupons.
+
+Possible Reasons:
+- Habitual bar visitors might be more receptive to bar-related deals and promotions.
+- Older drivers in this group might be more inclined to take advantage of opportunities to try out new bars or revisit preferred ones.
+- It's possible that age and bar-visiting frequency are correlated with lifestyle factors that influence coupon acceptance.
