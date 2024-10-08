@@ -29,32 +29,32 @@ print(data.info())
 
 
 ```
-# Analysis of the columns in simple language
+# Data Set Column Details
 
-# 1.  `destination`: Where the driver is going (e.g., home, work).
-# 2.  `passanger`: Who's in the car with the driver (e.g., alone, partner, kids).
-# 3.  `weather`: Current weather conditions (e.g., sunny, rainy).
-# 4.  `temperature`: Temperature outside (e.g., 30F, 55F).
-# 5.  `time`: Time of day (e.g., 10AM, 2PM).
-# 6.  `coupon`: Type of coupon (e.g., restaurant, coffee).
-# 7.  `expiration`: How long the coupon is valid for (e.g., 2 hours, 1 day).
-# 8.  `gender`: Gender of the driver (e.g., female, male).
-# 9.  `age`: Age range of the driver (e.g., below 21, 26-30).
-# 10. `maritalStatus`: Marital status of the driver (e.g., single, married).
-# 11. `has_children`: Whether the driver has children (e.g., yes, no).
-# 12. `education`: Educational level of the driver (e.g., high school, graduate degree).
-# 13. `occupation`: The driver's profession (e.g., architecture, business).
-# 14. `income`: Annual income range of the driver (e.g., below $12500, $25000-$37499).
-# 15. `Bar`: How often the driver goes to a bar (e.g., 0, 1-3 times).
-# 16. `CoffeeHouse`: How often the driver goes to a coffee house (e.g., 0, 4-8 times).
-# 17. `CarryAway`: How often the driver orders take-away food (e.g., 0, less than 1 time).
-# 18. `RestaurantLessThan20`: How often the driver eats at a less expensive restaurant (e.g., 0, 1-3 times).
-# 19. `Restaurant20To50`: How often the driver eats at a more expensive restaurant (e.g., 0, greater than 8 times).
-# 20. `toCoupon_GEQ5min`: Whether the coupon is at least 5 minutes away.
-# 21. `toCoupon_GEQ15min`: Whether the coupon is at least 15 minutes away.
-# 22. `toCoupon_GEQ25min`: Whether the coupon is at least 25 minutes away.
-# 23. `direction_same`: Whether the coupon is in the same direction as the driver's destination.
-# 24. `Y`: Whether the driver accepted the coupon (0 = No, 1 = Yes).
+1.  `destination`: Where the driver is going (e.g., home, work).
+2.  `passanger`: Who's in the car with the driver (e.g., alone, partner, kids).
+3.  `weather`: Current weather conditions (e.g., sunny, rainy).
+4.  `temperature`: Temperature outside (e.g., 30F, 55F).
+5.  `time`: Time of day (e.g., 10AM, 2PM).
+6.  `coupon`: Type of coupon (e.g., restaurant, coffee).
+7.  `expiration`: How long the coupon is valid for (e.g., 2 hours, 1 day).
+8.  `gender`: Gender of the driver (e.g., female, male).
+9.  `age`: Age range of the driver (e.g., below 21, 26-30).
+10. `maritalStatus`: Marital status of the driver (e.g., single, married).
+11. `has_children`: Whether the driver has children (e.g., yes, no).
+12. `education`: Educational level of the driver (e.g., high school, graduate degree).
+13. `occupation`: The driver's profession (e.g., architecture, business).
+14. `income`: Annual income range of the driver (e.g., below $12500, $25000-$37499).
+15. `Bar`: How often the driver goes to a bar (e.g., 0, 1-3 times).
+16. `CoffeeHouse`: How often the driver goes to a coffee house (e.g., 0, 4-8 times).
+17. `CarryAway`: How often the driver orders take-away food (e.g., 0, less than 1 time).
+18. `RestaurantLessThan20`: How often the driver eats at a less expensive restaurant (e.g., 0, 1-3 times).
+19. `Restaurant20To50`: How often the driver eats at a more expensive restaurant (e.g., 0, greater than 8 times).
+20. `toCoupon_GEQ5min`: Whether the coupon is at least 5 minutes away.
+21.   `toCoupon_GEQ15min`: Whether the coupon is at least 15 minutes away.
+22. `toCoupon_GEQ25min`: Whether the coupon is at least 25 minutes away.
+23. `direction_same`: Whether the coupon is in the same direction as the driver's destination.
+24. `Y`: Whether the driver accepted the coupon (0 = No, 1 = Yes).
 
 # Dataset Analysis for missing or problematic data
 
