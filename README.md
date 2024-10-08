@@ -23,5 +23,5 @@ import numpy as np
 
 data = pd.read_csv('data/coupons.csv')
 
-# Print the column names and their data types
+# Python Code to print the column names and their data types
 print(data.info())
