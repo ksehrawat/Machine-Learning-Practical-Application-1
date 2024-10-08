@@ -184,8 +184,8 @@ print(coupon_acceptance_rates.to_markdown(numalign="left", stralign="left"))
 | Restaurant(20-50)     | 44.6013 |
 | Bar                   | 41.1918 |
 
-Coupon: Carry out & Take away, Acceptance Rate: 73.77, Difference from Overall Acceptance Rate: 16.84
-Coupon: Restaurant(<20), Acceptance Rate: 70.90, Difference from Overall Acceptance Rate: 13.97
-Coupon: Coffee House, Acceptance Rate: 49.63, Difference from Overall Acceptance Rate: -7.30
-Coupon: Restaurant(20-50), Acceptance Rate: 44.60, Difference from Overall Acceptance Rate: -12.33
-Coupon: Bar, Acceptance Rate: 41.19, Difference from Overall Acceptance Rate: -15.74
+- Coupon: Carry out & Take away, Acceptance Rate: 73.77, Difference from Overall Acceptance Rate: 16.84
+- Coupon: Restaurant(<20), Acceptance Rate: 70.90, Difference from Overall Acceptance Rate: 13.97
+- Coupon: Coffee House, Acceptance Rate: 49.63, Difference from Overall Acceptance Rate: -7.30
+- Coupon: Restaurant(20-50), Acceptance Rate: 44.60, Difference from Overall Acceptance Rate: -12.33
+- Coupon: Bar, Acceptance Rate: 41.19, Difference from Overall Acceptance Rate: -15.74
