@@ -268,3 +268,6 @@ plt.show()
 
 ```
 ![download (3)](https://github.com/user-attachments/assets/44c5ad8f-94f2-4f4b-8847-59d7711587c7)
+
+
+# Bar  Coupon Data Analysis
