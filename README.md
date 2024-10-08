@@ -74,3 +74,5 @@ The dataset has missing values in several columns. Here's a breakdown:
 - The 'CarryAway' column has 151 missing values, which represents 1.19% of the total data.
 - The 'RestaurantLessThan20' column has 130 missing values, which represents 1.02% of the total data.
 - The 'Restaurant20To50' column has 189 missing values, which represents 1.49% of the total data.
+
+# Dataset Cleanup
