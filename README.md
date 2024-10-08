@@ -492,3 +492,24 @@ carryaway_coupons_data = data[data['coupon'] == 'Carry out & Take away'].copy()
 
 print(carryaway_coupons_data.head().to_markdown(index=False, numalign="left", stralign="left"))
 ```
+
+**Acceptance rates for each destination for the Carry out & Take away coupons and compare it with overall acceptance rate**
+```python
+# Calculate acceptance rates for each destination
+destination_acceptance_rates = carryaway_coupons_data.groupby('destination')['Y'].mean() * 100
+
+# Get the overall acceptance rate
+overall_acceptance_rate = carryaway_coupons_data['Y'].mean() * 100
+
+# Create the visualization
+plt.figure(figsize=(12, 6))
+destination_acceptance_rates.plot(kind='bar', color = 'skyblue')
+plt.axhline(y=overall_acceptance_rate, color='red', linestyle='-', label='Overall Acceptance Rate')
+plt.title('Carry Away Coupon Acceptance Rate by Destination')
+plt.xlabel('Destination')
+plt.ylabel('Acceptance Rate (%)')
+plt.legend()
+plt.xticks(rotation=45, ha='right')
+plt.show()
+```
+![download (8)](https://github.com/user-attachments/assets/f0c9ef8b-9b0a-4208-9b5f-2dcd9b19aad2)
