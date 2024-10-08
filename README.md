@@ -281,6 +281,7 @@ bar_coupons_data = data[data['coupon'] == 'Bar'].copy()
 print(bar_coupons_data.head().to_markdown(index=False, numalign="left", stralign="left"))
 ```
 
+
 **Proportion of bar coupons were accepted?**
 ```python
 # Count the number of accepted Bar coupons (Y = 1) using data frame bar_coupons_data
@@ -319,6 +320,7 @@ plt.show()
 - Total Accepted Bar Coupons: 788
 - Proportion of Accepted Bar Coupons: 41.19%
 
+
 **Acceptance rate between those who went to a bar 3 or fewer times a month to those who went more**
 ```python
 # Create a new column `bar_visit_frequency` based on the `Bar` column
@@ -341,6 +343,7 @@ plt.show()
 |:----------------------|---------:|
 | 3 or fewer            | 0.372674 |
 | more than 3           | 0.761658 |
+
 
 **Acceptance rate between drivers who go to a bar more than once a month and are over the age of 25 to the all others. Is there a difference?**
 ```python
@@ -375,6 +378,7 @@ Possible Reasons:
 - Habitual bar visitors might be more receptive to bar-related deals and promotions.
 - Older drivers in this group might be more inclined to take advantage of opportunities to try out new bars or revisit preferred ones.
 - It's possible that age and bar-visiting frequency are correlated with lifestyle factors that influence coupon acceptance.
+
 
 **Compare the acceptance rate between drivers who go to bars more than once a month and had passengers that were not a kid and had occupations other than farming, fishing, or forestry.**
 ```python
