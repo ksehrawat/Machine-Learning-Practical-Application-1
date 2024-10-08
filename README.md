@@ -16,6 +16,7 @@ The goal of this project is to distinguish between customers who accepted a driv
 
 ```python
 # Python Code to  read the coupons.csv stored in the data Folder using various Pyhon Libraries
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
@@ -27,7 +28,6 @@ data = pd.read_csv('data/coupons.csv')
 print(data.info())
 
 # Print the data frame first 5 rows in a structured format
-
 print(data.head().to_markdown(index=False, numalign="left", stralign="left"))
 
 ```
