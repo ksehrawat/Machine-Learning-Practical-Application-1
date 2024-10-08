@@ -31,3 +31,24 @@ print(data.info())
 print(data.head().to_markdown(index=False, numalign="left", stralign="left"))
 
 ```
+```python
+# Print the count and percentage of missing values for each column
+missing_values = data.isnull().sum()
+missing_percent = (missing_values / len(data)) * 100
+print("Missing Values:\n")
+print(pd.concat([missing_values, missing_percent], axis=1, keys=['Count', 'Percentage']).sort_values(by='Count', ascending=False).to_markdown(numalign="left", stralign="left"))
+```
+
+Analysis of Missing Values:
+The dataset has missing values in several columns. Here's a breakdown:
+- The 'car' column has 12576 missing values, which represents 99.15% of the total data.
+- The 'Bar' column has 107 missing values, which represents 0.84% of the total data.
+- The 'CoffeeHouse' column has 217 missing values, which represents 1.71% of the total data.
+- The 'CarryAway' column has 151 missing values, which represents 1.19% of the total data.
+- The 'RestaurantLessThan20' column has 130 missing values, which represents 1.02% of the total data.
+- The 'Restaurant20To50' column has 189 missing values, which represents 1.49% of the total data.
+
+Based on this information, we might consider:
+- **Imputation:** Replacing the missing values with estimates (mean, median, etc.) if the missing data is not significant or does not change the analysis significantly.
+- **Deletion:** If a column has a high percentage of missing values, it might be better to drop the column from the analysis.
+- **Further Investigation:** If the percentage of missing data is high, we might consider investigating why there is missing data and if there is any underlying pattern or bias in those missing values.
