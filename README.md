@@ -482,3 +482,5 @@ Based on the analysis, we can hypothesize that drivers who accepted bar coupons 
 
 **In Simple Words:**
 We think that drivers who accepted bar coupons are probably people who like to go to bars, are younger, don't have kids, and are not widowed. They might also be less likely to have a lower income or mainly visit cheap restaurants.
+
+# Independent Investigation Carry out & Take away coupons
