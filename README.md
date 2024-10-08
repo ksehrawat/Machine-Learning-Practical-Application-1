@@ -77,7 +77,7 @@ The dataset has missing values in several columns. Here's a breakdown:
 
 # Dataset Cleanup
 
-The column car has a very high proportion of missing values (around 99%), rendering it practically unusable for our analysis. So, I will exclude this column from further analysis
+**The column car has a very high proportion of missing values (around 99%), rendering it practically unusable for our analysis. So, I will exclude this column from further analysis**
 ```python
 # Drop the 'car' column
 if 'car' in data.columns:
@@ -86,7 +86,7 @@ if 'car' in data.columns:
 else:
     print("Column 'car' not found. Skipping drop.")
 ```
-Drop the rows with the null values from the columns CoffeeHouse, Restaurant20To50, CarryAway, RestaurantLessThan20, and Bar Columns. The percentage of the null values for these Columns is less than 2% so it will not have any significant impact
+**Drop the rows with the null values from the columns CoffeeHouse, Restaurant20To50, CarryAway, RestaurantLessThan20, and Bar Columns. The percentage of the null values for these Columns is less than 2% so it will not have any significant impact**
 ```python
 data.dropna(subset=['CoffeeHouse', 'Restaurant20To50', 'CarryAway', 'RestaurantLessThan20', 'Bar'], inplace=True)
 ```
