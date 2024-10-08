@@ -4,7 +4,7 @@ Github repository for the Practical Application 1
 # Project Overview
 The goal of this project is to distinguish between customers who accepted a driving coupon versus those that did not by using visualizations and probability distributions
 
-# Files Information
+# Data Information
 
 * Data Folder: **data** - This folder is created to store the data file (coupons.csv)
 
@@ -12,7 +12,7 @@ The goal of this project is to distinguish between customers who accepted a driv
   
 * Code File - Python Code is stored in the **Module_5_Activity1.ipynb** file
 
-# Data Analysis
+# Analysis
 
 ```python
 # Python Code to  read the coupons.csv stored in the data Folder
