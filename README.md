@@ -341,3 +341,29 @@ plt.show()
 |:----------------------|---------:|
 | 3 or fewer            | 0.372674 |
 | more than 3           | 0.761658 |
+
+**Acceptance rate between drivers who go to a bar more than once a month and are over the age of 25 to the all others. Is there a difference?**
+```python
+bar_coupons['target_group'] = 'Other'
+bar_coupons.loc[(bar_coupons['Bar'].apply(lambda x: x not in [0, 0.5]) ) & (bar_coupons['age'] > '25'), 'target_group'] = 'Bar > 1 & Age > 25'
+
+# Calculate acceptance rates for each group
+acceptance_rates_target = bar_coupons.groupby('target_group')['Y'].mean().reset_index()
+print(acceptance_rates_target.to_markdown(index=False))
+
+# Visualize the comparison
+plt.figure(figsize=(8, 6))
+sns.barplot(x='target_group', y='Y', data=bar_coupons, palette='viridis', hue='target_group')
+plt.title('Coupon Acceptance Rate by Target Group')
+plt.xlabel('Target Group')
+plt.ylabel('Acceptance Rate')
+plt.ylim(0, 1)
+plt.show()
+```
+| target_group       |        Y |
+|:-------------------|---------:|
+| Bar > 1 & Age > 25 | 0.682809 |
+| Other              | 0.337333 |
+![download (5)](https://github.com/user-attachments/assets/0c4b9859-6926-49e1-bce1-67b0f12f7815)
+
+Summary: The bar plot visually shows that there is a slight difference in the coupon acceptance rate between the two groups. People who go to a bar more than once a month and are over 25 have a slightly higher acceptance rate for bar coupons compared to others. However, the difference is not very large, suggesting that the combination of frequent bar visits and age over 25 might not be a strong predictor of bar coupon acceptance.
