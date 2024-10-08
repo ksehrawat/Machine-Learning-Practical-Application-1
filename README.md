@@ -313,3 +313,8 @@ plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 plt.title('Bar Coupon Acceptance Rate')
 plt.show()
 ```
+![download (4)](https://github.com/user-attachments/assets/2f3ac729-635f-4ae9-8a31-1751548e3712)
+
+- Total Bar Coupons: 1913
+- Total Accepted Bar Coupons: 788
+- Proportion of Accepted Bar Coupons: 41.19%
