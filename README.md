@@ -1,7 +1,9 @@
 # Machine-Learning-Practical-Application-1
 Github repository for the Practical Application 1 
 
-Files Information
+# Files Information
+
+Folder: data - This folder is created to store the data file (coupons.csv)
 
 # Data Analysis
 
