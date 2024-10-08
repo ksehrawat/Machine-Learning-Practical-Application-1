@@ -76,3 +76,5 @@ The dataset has missing values in several columns. Here's a breakdown:
 - The 'Restaurant20To50' column has 189 missing values, which represents 1.49% of the total data.
 
 # Dataset Cleanup
+
+The column car has a very high proportion of missing values (around 99%), rendering it practically unusable for our analysis. So, I will exclude this column from further analysis
