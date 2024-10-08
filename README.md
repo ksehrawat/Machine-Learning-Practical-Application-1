@@ -248,3 +248,4 @@ for bar in bars:
 
 plt.show()
 ```
+![download (2)](https://github.com/user-attachments/assets/8a896371-d0b1-402f-8e2c-064cc3e75f4b)
