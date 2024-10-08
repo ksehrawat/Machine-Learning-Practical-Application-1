@@ -412,6 +412,7 @@ plt.show()
 **Key Finding:** The acceptance rate for the target group 'Bar > 1, No Kids, Not Farming/Fishing/Forestry' appears to be slightly higher than the 'Other' group. This suggests that individuals who frequent bars, don't have children as passengers, and work in fields outside of farming, fishing, or forestry might be more likely to accept Bar coupons.
 
 **Question 6:**
+
 Compare the acceptance rates between those drivers who:
 - go to bars more than once a month, had passengers that were not a kid, and were not widowed OR
 - go to bars more than once a month and are under the age of 30 OR
