@@ -1,5 +1,5 @@
 # Project Overview
-The goal of this project is to distinguish between customers who accepted a driving coupon versus those that did not by using visualizations and probability distributions using Python Pandas
+The goal of this project is to distinguish between customers who accepted a driving coupon versus those that did not by using visualizations and probability distributions using Python Pandas. As part of this project only the detail analysis of the Bar and Carry out & Take away coupons will be done. All other coupons are not included for analysis in this project
 
 # Data Information
 
