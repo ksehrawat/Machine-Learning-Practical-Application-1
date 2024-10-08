@@ -452,4 +452,5 @@ plt.show()
 ![download (7)](https://github.com/user-attachments/assets/f437c207-30af-472f-b3f6-215d287ca4df)
 
 **Key Findings**
+
 The plot suggests that drivers who frequently visit bars, especially those without children and who are younger or not widowed, are more likely to accept a bar coupon.  Drivers who mainly frequent cheap restaurants and have lower incomes seem less inclined to take advantage of a bar coupon offer.
